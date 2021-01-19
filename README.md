@@ -49,7 +49,7 @@ This is a Web Server which can be used by any person looking to translate text f
             |___ translation
 
 ```
-<img src="./database.png" style="width: 30%; height:100%;" />
+<img src="./query1.JPG" style="width: 30%; height:100%;" />
 
 ## Design Decisions
  - Used MySQL as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four field it's best    to store the data in the form of table
