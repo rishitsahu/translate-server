@@ -26,8 +26,6 @@ This is a Web Server which can be used by any person looking to translate text f
     - Target language code
     - Text to be translated
 
-
-
 ## How to setup and run the server
 - Clone the repositry from github (https://github.com/rishitsahu/translate-server)
 - Open it in a code editor (VScode preferred)
@@ -49,7 +47,6 @@ This is a Web Server which can be used by any person looking to translate text f
             |___ translation
 
 ```
-<img src="./query1.JPG" style="width: 30%; height:100%;" />
 
 ## Design Decisions
  - Used MySQL as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four field it's best    to store the data in the form of table
@@ -73,6 +70,10 @@ This is a Web Server which can be used by any person looking to translate text f
 4. Now we have a list of similarlanguages in which we have already defined related languages. Translations in all the related languages are made through translate API and stored in the database and the query is back to route from we send the output along with the other fields to the user.
 
 ## Result Evaluation
+-Following is the result for converting "how are you" source_lng = english to gujrati
+
+<img src="./query1.JPG" style="width: 30%; height:100%;" />
+
 
 
 ## Further Improvements
