@@ -70,7 +70,7 @@ This is a Web Server which can be used by any person looking to translate text f
 4. Now we have a list of similarlanguages in which we have already defined related languages. Translations in all the related languages are made through translate API and stored in the database and the query is back to route from we send the output along with the other fields to the user.
 
 ## Result Evaluation
--Following is the result for converting "how are you" source_lng = english to gujrati
+-Following is the result for converting "how are you" source_lang = english to target_lang=gujrati
 
 <img src="./query1.JPG" style="width: 30%; height:100%;" />
 
