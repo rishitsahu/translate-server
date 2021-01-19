@@ -29,7 +29,7 @@ This is a Web Server which can be used by any person looking to translate text f
 
 
 ## How to setup and run the server
-- Clone the repositry from github (   )
+- Clone the repositry from github (https://github.com/rishitsahu/translate-server)
 - Open it in a code editor (VScode preferred)
 - For the MySQL database connection you have to specify the port, host, user and the password in all the 4 modules which are db, route, smartCache, cacheMiddleware according to   your MySQL database.
 - Install all the dependencies present in package.json with following command
@@ -39,11 +39,6 @@ This is a Web Server which can be used by any person looking to translate text f
  - Run index.json with following command
      node index
   -Server is ready. Run the request in this format http://localhost:4000/translate?src_lang=hi&target_lang=en&text=Pardon 
-  
-  **Note:** 
-  
-
-
 
 ## Cache Database Schema
 ```
@@ -77,9 +72,12 @@ This is a Web Server which can be used by any person looking to translate text f
 
 4. Now we have a list of similarlanguages in which we have already defined related languages. Translations in all the related languages are made through translate API and stored in the database and the query is back to route from we send the output along with the other fields to the user.
 
+## Result Evaluation
+
+
 ## Further Improvements
-1. Instead of taking language code from the user we can have just the name of the source and the target language. A separate table can be created in the database for this purpose.
-2. Instead of storing strings in the database we can do the operation on the words of the string, and we can store this. This would account for a decreased API cost.
+1. Instead of taking language code from the user we can have just the name of the source and the target language.A separate table can be created in the database in which we can store the languages with their language codes and then get the language code from the database to pass it to the API.
+2. Instead of storing strings in the database we can do the operation on the words of the string, and we can store the individual words.This would account for a decreased API cost but a complex database.
 
 
 ## NPM packages used
@@ -89,16 +87,6 @@ This is a Web Server which can be used by any person looking to translate text f
     - body-parser
     - @google-cloud/translate
     - nodemon
-
-
-
-
-
-
-
-
-
-
 
 ## Author
 
