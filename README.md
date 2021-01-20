@@ -70,7 +70,7 @@ This is a Web Server which can be used by an individual looking to translate tex
 
 3. Firstly query is routed to cacheMiddleware. If the same the input fields matches with already present data in the database, translation along with the source language, target language and the text is fetched else it is routed to smartCache.
 
-4. Now we have a list of similarlanguages in which we have already defined related languages. Translations in all the related languages are made through translate API and stored in the database and the query is back to route from we send the output along with the other fields to the user.
+4. Now we have a list of similarlanguages in which we have already defined related languages. Translations in all the related languages are made through translate API and stored in the database and the query is back to route from where we send the output along with the other fields to the user.
 
 ## Result Evaluation
 -Following is the result for converting "how are you" source_lang = english to target_lang=gujrati
