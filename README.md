@@ -51,11 +51,11 @@ This is a Web Server which can be used by an individual looking to translate tex
 ## Design Decisions
  - Used MySQL as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four field it's best    to store the data in the form of table
  - For the smartcaching, stored the translation of the given text in all the languages related to source language because a user is likely to also translate the same text to the    related languages
- - Designed router in such a way that if the demanded text is already present in the database, then the server wouldnot hit translate API and would return the translations directly from the database
+ - Designed router in such a way that if the demanded text is already present in the database, then the server wouldnot hit translate API and would return the translations    directly from the database
 
 ## Generating the API
-- Create free account at https://console.cloud.google.com/ for generating API KEY.
-(Will ask for credit card but wouldn't charge for less than 50 request per day)
+- Use https://console.cloud.google.com/ for generating API KEY from your service account. Now, enable the cloud translate API
+(Will ask for billing address but wouldn't charge for less than 50 request per day)
 
 > **Note:** As of now, credentials of the API will be sent through the mail so I have removed the credentials from the code I am uploading here. Please find it in the mail
 
@@ -63,7 +63,7 @@ This is a Web Server which can be used by an individual looking to translate tex
 
 1. As and when index.js is run on the command prompt a connection is created with the database and a new database is created named translate_data, a table is created in the database named translations with four fields namely src_lang (source language), target_lang, text (input), translation (output) and the server with the specified port number starts.
 
-2.Now the user is required to provide the query in a browser in the above mentioned format.
+2. Now the user is required to provide the query in a browser in the above mentioned format.
 
 3. Firstly query is routed to cacheMiddleware. If the same the input fields matches with already present data in the database, translation along with the source language, target language and the text is fetched else it is routed to smartCache.
 
