@@ -31,8 +31,8 @@ This is a Web Server which can be used by an individual looking to translate tex
 - Open it in a code editor (VScode preferred)
 - For the MySQL database connection you have to specify the port, host, user and the password in all the 4 modules which are db, route, smartCache, cacheMiddleware according to   your MySQL database.
 - Install all the dependencies present in package.json with following command
-     npm i dependency@lastest_version --save
-     npm install dotenv@google-cloud/translate --save (for the api use this command)
+     -npm i dependency@lastest_version --save
+     -npm install dotenv@google-cloud/translate --save (for the api, use this command)
  - Define the port no. in index.json (I have set it 1007 as of now)
  - Run index.json with following command
      node index
@@ -79,7 +79,7 @@ This is a Web Server which can be used by an individual looking to translate tex
 ## Further Improvements
 1. Instead of taking language code from the user we can have just the name of the source and the target language.A separate table can be created in the database in which we can store the languages with their language codes and then get the language code from the database to pass it to the API.
 
-2. Instead of storing strings in the database we can do the operation on the words of the string, and we can store the individual words.Now for each input string, we would break down the string into words and store that into database. At one ppoint of time, our database would be containing enough words to make meaningful sentences. This would account for a decreased API cost but a complex database.
+2. Instead of storing strings in the database we can do the operation on the words of the string, and we can store the individual words.Now for each input string, we would break down the string into words and store that into database. At one point of time, our database would be containing enough words to make meaningful sentences. We can make a separate machine learning model to train the dataset. This would account for a decreased API cost but a complex database.
 
 
 ## NPM packages used
