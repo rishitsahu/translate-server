@@ -13,14 +13,14 @@ Create a web server to translate a text from one language to another.
 ## Tech Stack
 
 1. Javascript: Primary programming language
-2. NodeJS: Backend Framework
-3. ExpressJS: Backend library
+2. NodeJS: Javascript runtime environment
+3. ExpressJS: Backend Framework
 4. MySQL: Database for storing translations
 5. External API: Google-Translate API (for actual translations)
 
 ## Approach
 
-This is a Web Server which can be used by any person looking to translate text from one language to the desired language. The user is required to provide three fields : -
+This is a Web Server which can be used by an individual looking to translate text from one language to the desired language. The user is required to provide three fields : -
 
     - Source language code
     - Target language code
