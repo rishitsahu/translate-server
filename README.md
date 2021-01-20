@@ -36,7 +36,8 @@ This is a Web Server which can be used by an individual looking to translate tex
  - Define the port no. in index.json (I have set it 1007 as of now)
  - Run index.json with following command
      node index
-  -Server is ready. Run the request in this format http://localhost:4000/translate?src_lang=hi&target_lang=en&text=Pardon 
+  -Server is ready. Run the request in this format 
+  http://localhost:4000/translate?src_lang=hi&target_lang=en&text=Pardon 
 
 ## Cache Database Schema
 ```
@@ -47,6 +48,7 @@ This is a Web Server which can be used by an individual looking to translate tex
             |___ translation
 
 ```
+
 <img src="./table1.JPG" style="width: 30%; height:100%;" />
 
 ## Design Decisions
