@@ -79,6 +79,14 @@ This is a Web Server which can be used by an individual looking to translate tex
 
 -I verified my code for different test cases and checked that it shouldn't contain similar data in the database. If there is already available data for the given input it should return the output from there only and shouldnot hit the API for that. I checked the database for the same with different and similar queries, and also checked for the different sections of the code so that only that part of the code works which is required for the particular query. 
 
+Translation for "hello everyone"
+
+<img src="./query2.JPG" style="width: 30%; height:100%;" />
+
+Translations for similar languages (Smart Caching)
+
+<img src="./table2.JPG" style="width: 30%; height:100%;" />
+
 ## Further Improvements
 1. Instead of taking language code from the user we can have just the name of the source and the target language.A separate table can be created in the database in which we can store the languages with their language codes and then get the language code from the database to pass it to the API.
 
