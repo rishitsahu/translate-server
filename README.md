@@ -47,6 +47,7 @@ This is a Web Server which can be used by an individual looking to translate tex
             |___ translation
 
 ```
+<img src="./table1.JPG" style="width: 30%; height:100%;" />
 
 ## Design Decisions
  - Used MySQL as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four field it's best    to store the data in the form of table
