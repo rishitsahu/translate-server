@@ -33,11 +33,11 @@ This is a Web Server which can be used by an individual looking to translate tex
 - Install all the dependencies present in package.json with following command
      -npm i dependency@lastest_version --save
      -npm install dotenv@google-cloud/translate --save (for the api, use this command)
- - Define the port no. in index.json (I have set it 1007 as of now)
+ - Define the port no. in index.json (I have set it 1010 as of now)
  - Run index.json with following command
      node index
   -Server is ready. Run the request in this format 
-  http://localhost:4000/translate?src_lang=hi&target_lang=en&text=Pardon 
+  http://localhost:1010/translate?src_lang=hi&target_lang=en&text=Pardon 
 
 ## Cache Database Schema
 ```
