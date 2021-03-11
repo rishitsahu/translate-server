@@ -1,6 +1,6 @@
-# Code-Young Assignment
+# Translate Server
 
-## Problem Statement
+## Target
 
 Create a web server to translate a text from one language to another. 
 
