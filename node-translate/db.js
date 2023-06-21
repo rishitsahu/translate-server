@@ -1,4 +1,4 @@
-//including the mysql module
+///including the mysql module
 const mysql = require("mysql");
 
 //creating connection with mysql database
@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   port:"2306",
   host: "localhost",
   user: "root",
-  password: "1234"
+  password: "5678"
 })
 
 //checking the connection with the server
